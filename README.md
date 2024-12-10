@@ -12,6 +12,8 @@ Hardware – PCs, Cyclone II , USB flasher
 
 Software – Quartus prime
 
+**Theory**
+
 **Full Adder and Full Subtractor**
 
 **Full Adder**
@@ -38,18 +40,62 @@ Borrow out = A'Bin + A'B + BBin
 
 **Truthtable**
 
+![download](https://github.com/user-attachments/assets/a548191a-cfa8-41c2-ad4c-977ad84be9c0)
+
+
+![download](https://github.com/user-attachments/assets/9b11ded6-d735-4321-a14d-0e644219254a)
+
+
 **Procedure**
 
-Write the detailed procedure here
+1. Type the program in Quartus software.
+  
+2. Compile and run the program.
+  
+3. Generate the RTL schematic and save the logic diagram.
+   
+4. Create nodes for inputs and outputs to generate the timing diagram.
 
+5. For different input combinations generate the timing diagram
+   
 **Program:**
 
-/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
-*/
+/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. 
+
+i)FULL ADDER
+
+```
+module fa(a,b,cin,sum,carry);
+input a,b,cin;
+output sum,carry;
+assign sum=( (a ^ b)^cin);
+assign carry= ( (a & b)| ( cin &(a ^ b )));
+endmodule
+```
+ii)FULL SUBTRACTOR
+
+```
+module fs(a,b,bin,difference,borrow);
+input a,b,bin;
+output difference,borrow;
+assign difference= ( (a ^ b)^bin);
+assign borrow= ( ( ~a & b)| ( bin & (~(a ^ b ))));
+endmodule
+```
+
+Developed by: Pradhagini A RegisterNumber: 24901125*/
 
 **RTL Schematic**
 
+![exp4 full adder](https://github.com/user-attachments/assets/6e3a3f86-61e7-407c-b852-f8d50e2352c0)
+
+![exp4 fs](https://github.com/user-attachments/assets/d8100773-31e3-4e3e-be14-6a9822842d37)
+
 **Output Timing Waveform**
+
+![exp4 fa wf](https://github.com/user-attachments/assets/e6c5eaec-bc7b-4c6e-9fc8-50e11fa419c8)
+
+![exp4 fs wf](https://github.com/user-attachments/assets/abff7b3b-6c33-42c5-ae54-c5dda9f2bed6)
 
 **Result:**
 
