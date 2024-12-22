@@ -83,17 +83,25 @@ assign borrow= ( ( ~a & b)| ( bin & (~(a ^ b ))));
 endmodule
 ```
 
-Developed by: Pradhagini A RegisterNumber: 24901125*/
+Developed by: Pradhagini A RegisterNumber: 212224050031
 
 **RTL Schematic**
 
+i)FULL ADDER
+
 ![exp4 full adder](https://github.com/user-attachments/assets/6e3a3f86-61e7-407c-b852-f8d50e2352c0)
+
+ii)FULL SUBTRACTOR
 
 ![exp4 fs](https://github.com/user-attachments/assets/d8100773-31e3-4e3e-be14-6a9822842d37)
 
 **Output Timing Waveform**
 
+i)FULL ADDER
+
 ![exp4 fa wf](https://github.com/user-attachments/assets/e6c5eaec-bc7b-4c6e-9fc8-50e11fa419c8)
+
+ii)FULL SUBTRACTOR
 
 ![exp4 fs wf](https://github.com/user-attachments/assets/abff7b3b-6c33-42c5-ae54-c5dda9f2bed6)
 
